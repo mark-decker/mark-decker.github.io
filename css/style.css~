@@ -115,6 +115,7 @@ color: #004F8B;
 letter-spacing: 1px;
 background: url('.img/h2-bg.gif') no-repeat 0 53%;
 padding-left: 25px;
+padding-right: 25px;
 margin-bottom: 7px;
 }
 
@@ -150,7 +151,7 @@ background: none;
 
 .content {
 width: 1020px;
-margin: 19px auto 0 auto;
+margin: 19px auto 19px auto;
 }
 
 .column-left {
@@ -213,7 +214,7 @@ margin: 0 6em 0 2em;
 
 .box-in p {
 line-height: 1.6;
-margin: 0 0 10px 25px;
+margin: 0 10px 10px 25px;
 color: ;
 }
 
@@ -265,10 +266,5 @@ color: #626262;
 
 
 
-.overbox {
-height: 100%;
-background-color: white;
-text-align: center;
-font: 1.2em Verdana, Arial, Helvetica, sans-serif;
-}
+
 

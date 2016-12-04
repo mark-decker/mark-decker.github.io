@@ -115,6 +115,7 @@ color: #004F8B;
 letter-spacing: 1px;
 background: url('.img/h2-bg.gif') no-repeat 0 53%;
 padding-left: 25px;
+padding-right: 25px;
 margin-bottom: 7px;
 }
 
@@ -150,7 +151,7 @@ background: none;
 
 .content {
 width: 1020px;
-margin: 19px auto 0 auto;
+margin: 19px auto 19px auto;
 }
 
 .column-left {
@@ -207,13 +208,13 @@ background: url('.img/box-bg.gif') repeat-y 0 0;
 
 .box-in {
 background-color: #FFFFFF;
-padding: 0.8em 0 5em 0;
+padding: 0.8em 0.8em 5em 0;
 margin: 0 6em 0 2em;
 }
 
 .box-in p {
 line-height: 1.6;
-margin: 0 0 10px 25px;
+margin: 0 10px 10px 25px;
 color: ;
 }
 
