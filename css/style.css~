@@ -193,7 +193,7 @@ width: 650px;
 
 
 .column-right2 {
-margin: 0 0 0 25px;
+margin: 0 0 0 100px;
 width: 850px;
 }
 .box-top {
@@ -261,5 +261,14 @@ margin-right: 40px;
 .footer-info-left a, .footer-info-left a:visited, .footer-info-right a, .footer-info-right a:visited {
 font-weight: normal;
 color: #626262;
+}
+
+
+
+.overbox {
+height: 100%;
+background-color: white;
+text-align: center;
+font: 1.2em Verdana, Arial, Helvetica, sans-serif;
 }
 

@@ -104,4 +104,9 @@
 .liteAccordion.ie7.stitch .slide > h2 b, .liteAccordion.ie8.stitch .slide > h2 b{top:36%}
 .liteAccordion.ie9.stitch{box-shadow:0 5px 15px rgba(0,0,0,0.4)}
 
-
+.overbox {
+height: 100%;
+background-color: white;
+text-align: center;
+font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+}
