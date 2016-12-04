@@ -1,30 +1,127 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Mark Decker</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/research">Research</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Mark Decker</h1>
-				<p> I am a research scientist currently working at the Univsersity of New South Wales.  I work at the nexus of atmospheric sciences, hydrology, ecology, weather and climate. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:mdatmosci@gmail.com">email</a></li>
-        		<li><a href="https://github.com/mark-decker">github.com/mark-decker</a></li>
-			</ul>
-		</footer>
-	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Mark Decker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<!-- liteAccordion is Homepage Only -->
+<link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div class="title">
+    <div class="title-top">
+      <div class="title-left">
+        <div class="title-right">
+          <div class="title-bottom">
+            <div class="title-top-left">
+              <div class="title-bottom-left">
+                <div class="title-top-right">
+                  <div class="title-bottom-right">
+                    <h1><a href="#">Mark Decker</a></h1>
+                    <p>A website detailing my research and teaching</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="noscreen" />
+  <div class="content">
+    <div class="column-left-menu">
+      <h3>MENU</h3>
+      <a href="#skip-menu" class="hidden">Skip menu</a>
+      <ul class="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="myresearch.html">Research</a></li>
+        <li class="last"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div id="skip-menu"></div>
+     <div class="column-right"> 
+<!-- ####################################################################################################### -->
+    <div id="featured_slide"> 
+    <!-- ####################################################################################################### -->
+    <ol>
+      <li>
+        <h2><span>Slide 1</span></h2>
+        <div><img src="images/demo/featured-slide/figure_1.gif" alt="" /></div>
+      </li>
+      <li>
+        <h2><span>Slide 2</span></h2>
+        <div><img src="images/demo/featured-slide/figure_2.gif" alt="" /></div>
+      </li>
+      <li>
+        <h2><span>Slide 3</span></h2>
+        <div><img src="images/demo/featured-slide/figure_3.gif" alt="" /></div>
+      </li>
+      <li>
+        <h2><span>Slide 4</span></h2>
+        <div><img src="images/demo/featured-slide/figure_4.gif" alt="" /></div>
+      </li>
+      <li>
+        <h2><span>Slide 5</span></h2>
+        <div><img src="images/demo/featured-slide/figure_5.gif" alt="" /></div>
+      </li>
+    </ol>
+    <!-- ####################################################################################################### --> 
+    </div>
+    </div>
+
+<!-- still under skip menu -->
+      <div class="box">
+        <div class="box-top"></div>
+        <div class="box-in">
+          <h2>Welcome to my website</h2>
+          <p>My name is Mark Decker and I am currently a research fellow at the Centre of Excellence for Climate System Science at the Univserity of New south Wales.</p>
+          <p>My approach to scientific discovery utilizes my knowledge of physical processes, mathematical techniques, and observations to develop, improve, and utilize climate and weather models.  My specific focus has been on land and land-atmosphere interactions at scales from a point to the globe.  My research stands at the nexus of atmospheric science, climate science, hydrology, and ecology, with implications for water management, agriculture, and climate and weather prediction.</p>
+          <p>I have contributed to the model develop of the land surface models in the Community Earth System Model (CESM) and the Australian Community Climate Eaarth System Simulator (ACCESS)<p>
+          <br />
+          <h2>Research Interests</h2>
+          <ul class="main-list">
+            <li>Model Development and Evaluation</li>
+            <li>Hydrology in large scale models</li>
+            <li>Turbulent fluxes</li>
+            <li>Land-atmosphere coupling</li>
+            <li>Anthropogenic activities such as agriculture</li>
+            <li>Climate and numerical weather prediction</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box-bottom">
+        <hr class="noscreen" />
+        <div class="footer-info-left"><a href="#">Mark Decker</a>, 2016. All rights reserved.</div>
+        <div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
+      </div>
+    </div>
+    <div class="cleaner">&nbsp;</div>
+  </div>
+</div>
+<!-- liteAccordion is Homepage Only --> 
+<script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script> 
+<script type="text/javascript">
+$("#featured_slide").liteAccordion({
+    theme: "os-tpl",
+    containerWidth: 760, // fixed (px)
+    containerHeight: 360, // fixed (px) - overall height of the slider
+    headerWidth: 48, // fixed (px) - slide spine title
+    firstSlide: 1, // displays slide (n) on page load
+	activateOn: "click", // click or mouseover
+    autoPlay: false, // automatically cycle through slides
+    pauseOnHover: true, // pause slides on hover
+    rounded: false, // square or rounded corners
+    enumerateSlides: true, // put numbers on slides
+    slideSpeed: 800, // slide animation speed
+    cycleSpeed: 6000, // time between slide cycles
+});
+</script>
+</body>
 </html>
