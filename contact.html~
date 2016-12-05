@@ -42,20 +42,30 @@
         <li><a href="cv.html">CV</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="myresearch.html">Research</a></li>
-        <li class="last"><a href="contact.html">Contact</a></li>
+        <li class="last"><a href="#">Contact</a></li>
       </ul>
     </div>
     <div id="skip-menu"></div>
-     <div class="column-right2"> 
+     <div class="column-right"> 
      <div class="box">
         <div class="box-top"></div>
         <div class="box-in">
 ]
-          <h2>About myself</h2>
-          <p>Ever since I was a little child, I have always had a passion for finding out how things work.  When I was little I took apart the remote control and was unable to put it back together.  I got in trouble.  Thankfully my parents bought me a bread board to build circuits, a chemistry set, and let me build my own go kart with a lawn mower engine in elementary school.  That kept me out of trouble and kept my desire to discover alive.  My passion for science and research is a simple extension of this curiosity.  I want to know the how physical world around us works.<p>
-        <p>Although I am an American citizen, I currently live and work in Sydney Australia, and have done so since 2010.  I have an amazing partner and a beautiful little daughter.  Living and working in Sydney has been a great opportunity to collaborate with world class researchers and experience a new culture.  My future will hopefully contain a return to the US.<p>
+          <h2><b>Contact information<b></h2>
+          <ul class="main-list">
+
+           <p>Climate Change Research Center<p>
+           <p>Level 4 Mathews Building<p>
+           <p>University of New South Wales<p>
+           <p>Sydney, Australia 2052<p>
+           <p><p>
+           <p>m.decker@unsw.edu.au<p>
+           <p><a href=https://goo.gl/4Ldu3s>Google Scholar</a><p>
+           <p><a href=http://orcid.org/0000-0003-1071-611X>ORCID id: 0000-0003-1071-611X</a><p>
 
 
+
+          </ul>
         </div>
       </div>
       <div class="box-bottom">
