@@ -1,134 +1,326 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+<!DOCTYPE html>
+<html>
 <title>Mark Decker</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
-<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
-<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
-<!-- liteAccordion is Homepage Only -->
-<link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
 <body>
-<div id="wrapper">
-  <div class="title">
-    <div class="title-top">
-      <div class="title-left">
-        <div class="title-right">
-          <div class="title-bottom">
-            <div class="title-top-left">
-              <div class="title-bottom-left">
-                <div class="title-top-right">
-                  <div class="title-bottom-right">
-                    <h1><a href="#">Mark Decker</a></h1>
-                    <p>A website detailing my research and teaching</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="noscreen" />
-  <div class="content">
-    <div class="column-left-menu">
-      <h3>MENU</h3>
-      <a href="#skip-menu" class="hidden">Skip menu</a>
-      <ul class="menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="aboutme.html">About me</a></li>
-        <li><a href="MarkDeckerCV.pdf">CV</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="myresearch.html">Research</a></li>
-        <li class="last"><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div id="skip-menu"></div>
-     <div class="column-right"> 
-<!-- ####################################################################################################### -->
-    <div id="featured_slide"> 
-    <!-- ####################################################################################################### -->
-    <ol>
-      <li>
-        <h2><span>Figure 1</span></h2>
-        <div><img src="images/demo/featured-slide/figure_1.gif" alt="" />
-                <div class="overbox" >
-                <div class="title overtext" >
-                    <font color=white>Figures from current and past work.</font>
-                </div>
-                </div>
-      </div>
 
-      </li>
-      <li>
-        <h2><span>Figure 2</span></h2>
-        <div><img src="images/demo/featured-slide/figure_2.gif" alt="" /></div>      
-      </li>
-      <li>
-        <h2><span>Figure 3</span></h2>
-        <div><img src="images/demo/featured-slide/figure_3.gif" alt="" /></div>
-      </li>
-      <li>
-        <h2><span>Figure 4</span></h2>
-        <div><img src="images/demo/featured-slide/figure_4.gif" alt="" /></div>
-      </li>
-      <li>
-        <h2><span>Figure5 5</span></h2>
-        <div><img src="images/demo/featured-slide/figure_5.gif" alt="" /></div>
-      </li>
-    </ol>
-    <!-- ####################################################################################################### --> 
-    </div>
-    </div>
+<!-- Navbar -->
+   <div class="w3-twothird" style="margin-left:250px">
 
-<!-- still under skip menu -->
-      <div class="box">
-        <div class="box-top"></div>
-        <div class="box-in">
-          <h2><b>Welcome to my website<b></h2>
-          <p><b>My name is Mark Decker and I am currently a research fellow at the Centre of Excellence for Climate System Science at the University of New South Wales.<b></p>
-          <p>My approach to scientific discovery combines my knowledge of physical processes, mathematical techniques, and observations to develop, improve, and utilize climate and weather models.  My specific focus has been on land and land-atmosphere interactions at scales from a point to the globe.  My research stands at the nexus of atmospheric science, climate science, hydrology, and ecology, with implications for water management, agriculture, and climate and weather prediction.</p>
-          <p>I have contributed to the model development of the land surface models in the Community Earth System Model (CESM) and the Australian Community Climate Earth System Simulator (ACCESS)<p>
-          <br />
-          <h2><b>Research Interests<b></h2>
-          <ul class="main-list">
-            <li>Model Development and Evaluation</li>
-            <li>Hydrology in large scale models</li>
-            <li>Turbulent fluxes</li>
-            <li>Land-atmosphere coupling</li>
-            <li>Anthropogenic activities such as agriculture</li>
-            <li>Climate and numerical weather prediction</li>
-          </ul>
-        </div>
-      </div>
-      <div class="box-bottom">
-        <hr class="noscreen" />
-        <div class="footer-info-left"><a href="#">Mark Decker</a>, 2016. All rights reserved.</div>
-        <div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
-      </div>
-    </div>
-    <div class="cleaner">&nbsp;</div>
+    <div class="w3-container">
+
+    <div class="w3-bar w3-theme w3-left-align">
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium w3-align-right" onclick="mytab(event,'tone')"><h4>Welcome</h4></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h4>My Story</h4></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h4>Select Figures</h4></button>
+     </div>  
+     </div>
+     </div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myteaching.html">Teaching</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="MarkDecker_current.pdf">Cirriculum Vitae</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="contact.html">Contact Me</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+   <div class="w3-twothird w3-container">
+   <div class="w3-border">
+         <div id="tone" class="mytab">
+         <div class="w3-theme-l4">
+          <h2>Welcome to Mark Decker's homepage!</h2>
+            <div class="w3-container w3-theme-l5"  style="font-size:large">
+      <p>I developed this website to document and share my research and teaching.  I'm an academic research scientist specializing in terrestrial and land-atmosphere processes in weather and climate.  I am most proud of my continuing model development research; contributing to the weather and climate models that forecast weather tomorrow and indicate future climates.</p>
+<p>In the long term I plan to add earth science, climate, weather, terrestrial, and hydrological information and resources to this site; spreading knowledge and sharing my passions.</p>
+           </div>
+
+<div class="row">
+  <div class="column">
+   <img src="drought_labelled.jpg" class="w3-circle" alt="Drought"  style="width:50%">
+   <img src="irrigation_labelled.jpg" class="w3-circle" alt="Water Usage" style="width:40%">
+
   </div>
 </div>
-<!-- liteAccordion is Homepage Only --> 
-<script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script> 
-<script type="text/javascript">
-$("#featured_slide").liteAccordion({
-    theme: "os-tpl",
-    containerWidth: 760, // fixed (px)
-    containerHeight: 360, // fixed (px) - overall height of the slider
-    headerWidth: 48, // fixed (px) - slide spine title
-    firstSlide: 1, // displays slide (n) on page load
-	activateOn: "click", // click or mouseover
-    autoPlay: false, // automatically cycle through slides
-    pauseOnHover: true, // pause slides on hover
-    rounded: false, // square or rounded corners
-    enumerateSlides: true, // put numbers on slides
-    slideSpeed: 800, // slide animation speed
-    cycleSpeed: 6000, // time between slide cycles
-});
+
+<div class="row">
+  <div class="column">
+   <img src="mnt_cloud_labelled.jpg" class="w3-circle" alt="Land-Atmosphere Coupling"  style="width:40%">
+
+   <img src="oregon_falls_labelled.jpg" class="w3-circle" alt="Rivers,Soil Moisture, Groundwater"  style="width:50%">
+
+  </div>
+</div>
+         </div>
+         </div>
+
+      <div id="ttwo" class="mytab" style="display:none">
+         <div class="w3-theme-l4">
+         <h2>My Story</h2>
+            <div class="w3-container w3-theme-l5"  style="font-size:x-large">
+      <p>Growing up in Colorado I spent many night backpacking and days fishing; likely why I love nature.  In contrast to many I also demonstrated a nearly uncontrollable desire to know how everthing works.  As a toddler I took apart remote controls and other devices.  My parents saved out possesions by giving me chemistry sets, electronics sets, a microscope, and eventuallly letting my 9 year old self build a lawn mower engine powered go kart by myself.  Eventually I discovered that math and physics not only explain dynamical and mechanistic processes but are also capabale of predicting future events!  My research is a perfect asnwer to passions that began as a child; my need for discovery, and the beauty of math and physics.</p>
+<p>I never envisioned that I would follow in the foot steps of my Mom and Sister to teach; I discovered teaching to be as rewardful as research during University.  Although my Brother is working to become a teacher, so nature and nuture may have predestined my teaching passion.</p>
+<p>I've lived in Australia the past seven years after finishing my PhD, partly to experience to world and partly because the ecology is unique, but primarily to work with internationally renowned scienmtists.  I now have the research and teaching experience, expertise, and track record to become an assistant professor in the US.  I am currently applying to positions in departments with complementary expertise; ensuring the postion benefits myself and the department.</p>
+           </div>
+
+         </div>
+         </div>
+
+      <div id="tthree" class="mytab" style="display:none">
+         <div class="w3-theme-l4">
+         <h2> Selected Research Figures</h2>
+
+      
+         <div class="w3-bar">
+             <button class="w3-bar-item w3-button w3-theme-d2 testbtn w3-padding-16" onclick="mainswitch('C1','C2','C3')"><h3>Irigation dogemand</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d4 testbtn w3-padding-16" onclick="mainswitch('C2','C1','C3')"><h3>Pore scale processes</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d1 testbtn w3-padding-16" onclick="mainswitch('C3','C2','C1')"><h3>Subgrid hydrology</h3></button>
+         </div>  
+
+      <!--  <button onclick="mainswitch('C1','C2','C3')" class="w3-padding-16 w3-theme-l1 w3-button w3-block w3-left-align"><h2>Model development</h2></button> -->
+         <div id="C1" class="w3-hide w3-show">
+           <div class="w3-container">
+            <div class="w3-theme-l5">
+
+           <img src="irrigation_rate_offline_coupled_3.png" alt="Irrigation" style="width:70%">
+          <h3> <p>Land-atmosphere feedbacks significantly reduce the spatial mean and increase the spatially variability of irrigation demand.  <a href="http://iopscience.iop.org/article/10.1088/1748-9326/aa65a6">Study Here</a></h3>
+
+CTRL_GW_PSM_4towers_mylabels.png
+         </div>
+         </div>
+          </div>
+          
+     <!--   <button onclick="mainswitch('C2','C3','C1')" class="w3-padding-16 w3-theme-l1 w3-button w3-block w3-left-align"><h2>Understanding hydrology, weather, and climate</h2></button> -->
+         <div id="C2" class="w3-hide">
+               <div class="w3-container">
+            <div class="w3-theme-l5">
+
+           <img src="CTRL_GW_PSM_4towers_mylabels.png" alt="PSM" style="width:70%">
+           <h3><p>Empirical parameterizations that limit soil evaporation as a function of soil moisture neglect the physical mechanisms that govern evaporation from soil.  By developing and implementing a pore scale model of soil evaporation suitable for land modeling, the performance of CABLE at dozens of flux tower locations wsa greatly improved.<a href="http://onlinelibrary.wiley.com/doi/10.1002/2016MS000832/full">Study Here</a></h3>
+
+
+         </div>
+         </div>
+          </div>
+
+     <!--   <button onclick="mainswitch('C3','C2','C1')" class="w3-padding-16 w3-theme-l1 w3-button w3-block w3-left-align"><h2>Data Analysis</h2></button> -->
+         <div id="C3" class="w3-hide">
+               <div class="w3-container">
+            <div class="w3-theme-l5">
+
+           <img src="subgrid_slopes_gw_satfrac_dry_2.png" alt="subgrid" style="width:70%">
+           <h3><p>A schematic of the subgrid porcesses and aquifer model I implemented in CABLE using an assumed (but dynamic!) ePDF of subgrid soil moisture.  The single grid cell shown includes how sugbrid topography and soil moisture generate surface and subsurface runoff, as well as turbulent fluxes.<a href="http://onlinelibrary.wiley.com/doi/10.1002/2015MS000507/full">Study Here</a></h3>
+
+
+         </div>
+         </div>
+          </div>
+
+     </div>
+     </div>
+
+     </div> <!--borber-->
+  </div>  <!--2/3 container-->
+
+
+<div class="w3-third w3-container">
+<h3>Why a custom webpage?</h3>
+<button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Share my work</button>
+<div id="Demo1" class="w3-hide">
+  <div class="w3-container">
+    <p>I wanted to create a long lived vehicle to share my published, in progress, and future research, my teaching philosophy and experience, and tidbits about myself.  Google scholar and ORCID contain my publication record, however ideas on future research and teaching are nelgected.  Ultimately I needed a single place where students, potential employers, and possible collaborators are provided with a record of my past, present, and future (well possible future) work.</p>
+  </div>
+</div>
+
+
+<button onclick="myAccFunc('Demo2','Demo1','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Spread interest</button>
+<div id="Demo2" class="w3-hide">
+  <div class="w3-container">
+    <p>Math, physics, and science have transformed society.  Everything that now surrounds us (from cars to plastic spoons) was made possible because of the knowledge discovered and dissiminated by scientists. Science benefits society when society understands the scientific process and believes the results.  Unfortunately it seems much of society (atleast in the US) do not believe of trust scientists.  I want to build a platform to spread my passion for math and science, particularly for weather and climate.  I feel a scientificly literate population would be gauranteed if everyone witnessed the beauty I see in predicting the future using physcs and math.  The design and creation of material that spreads my scientific passion is under development, so come back soon!</p>
+  </div>
+</div>
+
+<button onclick="myAccFunc('Demo3','Demo1','Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Learn new skill</button>
+<div id="Demo3" class="w3-hide">
+  <div class="w3-container">
+    <p>I have an innate desire to know the mechanisms and processes in the world around me.  I took apart remote controls and watches as a toddler and discovering and explaining hydrometeorological processes is my career (and passion).  However my curiousity is unlimited, and I had to learn how webpages are built in html and css.  Originally my page used liteaccordion, but has now moved to w3.css.  To this end I'd like to learn javascript for future developments.</p>
+  </div>
+</div>
+</div>
+<!--
+<div class="w3-third w3-container">
+
+   <button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Groundwater and Transpiration</button>
+   <div id="Demo1" class="w3-hide">
+      <div class="w3-contair">
+       <figure>
+        <div id="c3">
+             <img src="gw_grass_tree_transpiration.jpg" alt="" width="100%"/>
+             <figcaption><p>Despite similar precipitation anamolies over grasslands and forests, the forests exhibit minimal tranpiration variations while transpoiration over grasslands is similar to precipitation.  Neglecting groundwater-transpiration dynamics results in the inability of the model to exhibit similar vegetation dependent drought responses.</p></figcaption>
+       </div>
+
+             </figure>
+  </div>
+</div>
+
+
+<button onclick="myAccFunc('Demo2','Demo1','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Irrigation Demand Modeling</button>
+<div id="Demo2" class="w3-hide">
+  <div class="w3-container">
+       <figure>
+             <img src="images/demo/featured-slide/figure_2.gif" alt="" width="100%"/>
+             <figcaption>Irrigation demand is significnatly reduced by local land-atmosphere feedbacks. Future irrigation demand forecast from land only models neglects this process, likely leading to erronous predictions.</figcaption>
+             </figure>
+  </div>
+</div>
+
+<button onclick="myAccFunc('Demo3','Demo1','Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Australian forests drink groundwater</button>
+<div id="Demo3" class="w3-hide">
+  <div class="w3-container">
+       <figure>
+             <img src="images/demo/featured-slide/figure_3.gif" alt="" width="150%"/>
+             <figcaption>Australian forests exhibit little interannual variability frequent droughts by utilizing groundwater.  Model simulations show without groundwater, models cannot capture the differential response to dry periods exhibited by different vegetation types.</figcaption>
+             </figure>
+  </div>
+</div>
+</div>
+-->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <p class="w3-center w3-text-yellow">Mark Decker, 2018, All rights reserved. Made Possible (simple!) using <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
+    </div>
+
+  </footer>
+
+</div>
+
+
+<!-- END MAIN -->
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+
+
+// Accordions
+function twoswitch(id,idd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }
+}
+
+// Accordions
+function mainswitch(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Accordions
+function myAccFunc(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Tabs
+function mytab(evt, mytab) {
+  var i;
+  var x = document.getElementsByClassName("mytab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtnt");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(mytab).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+
 </script>
+
 </body>
 </html>
+

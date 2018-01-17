@@ -1,114 +1,248 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+<!DOCTYPE html>
+<html>
 <title>Mark Decker</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
-<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
-<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
-<!-- liteAccordion is Homepage Only -->
-<link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
 <body>
-<div id="wrapper">
-  <div class="title">
-    <div class="title-top">
-      <div class="title-left">
-        <div class="title-right">
-          <div class="title-bottom">
-            <div class="title-top-left">
-              <div class="title-bottom-left">
-                <div class="title-top-right">
-                  <div class="title-bottom-right">
-                    <h1><a href="#">Mark Decker</a></h1>
-                    <p>A website detailing my research and teaching</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+<!-- Navbar -->
+   <div class="w3-twothird" style="margin-left:250px">
+
+    <div class="w3-container">
+
+    <div class="w3-bar w3-theme w3-left-align">
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right" sonclick="mytab(event,'tone')"><h3>Why I Teach</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h3>My philosophy</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h3>Teaching experience</h3></button>
+     </div>  
+     </div>
+     </div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myteaching.html">Teaching</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="cv.html">Cirriculum Vitae</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="contact.html">Get In Touch</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+   <div class="w3-twothird w3-container">
+   <div class="w3-border">
+         <div id="tone" class="mytab">
+         <div class="w3-theme-l4">
+          <h2>Why Teach?  </h2>
+            <div class="w3-container w3-theme-l5"  style="font-size:x-large">
+            <p>My desire to and passion for teaching is selfish and altruistic</p>
+           <ul>
+              <li>Teaching is a form of instant (or near term) gratification.  My personal satisfaction from enabling an 'oh now I get it moment', or accomplishments once though impossible, or sparking interest in math or science.  Even the extra time teaching provides to talk about my passions is rewardful.  Only recently this satisfaction waw surpassed by similar moments with my daughter.</li>
+              <li>I firmly believe that a general population educated in math, science (e.g. earth science), and the scientific method is a vital part of a functioning democracy.  Through voting, people express their desires related to environmental policy decisions.  An uneducated society is unable to make informed decisions on which canditates will pursue evidence based policy choices.  If a majority of people believed mecrury safe and capable of transforming anyone into a super hero like the X-Man Wolverine (<a href="https://goo.gl/a5zGDb"><b>it is extremely dangerous! Do not try!</b></a>) elected officials wouldn't waste resources preventing mercury exposre.  Mercury would poison everyone!</li>
+           </div>
+
+         </div>
+         </div>
+
+      <div id="ttwo" class="mytab" style="display:none">
+         <div class="w3-theme-l4">
+         <h2>My philosophy and Style</h2>
+          <div class="w3-container w3-theme-l5" style="font-size:x-large">
+            <p>Learning varies with individuals; no one method provides a universally ideal approach.  However any technique that generates student interest and maximizes student engagement is always beneficial.  My methods for maximizing interest and engagement include the following.<p>
+             <ul><li>Purposely inhibiting my instincts to hide my passion for everything earth science</li>
+                 <li>Providing metaphors and analogies using real world items and topics important to students when explaining complex ideas</li>
+                 <li>Minimize any actual lecturing.  Instead I use questions and guide answers.  Yes I expect everyone to participate!</li>
+                 <li>Solve problems in class using small groups, selected to ensure every group has a broad range of backgrounds and opinions.</li>
+              </ul>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="noscreen" />
-  <div class="content">
-    <div class="column-left-menu">
-      <h3>MENU</h3>
-      <a href="#skip-menu" class="hidden">Skip menu</a>
-      <ul class="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="aboutme.html">About me</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li class="last"><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div id="skip-menu"></div>
-     <div class="column-right2"> 
-     <div class="box">
-        <div class="box-top"></div>
-        <div class="box-in">
-]
-          <h2><b>Research Statement<b></h2>
-          <p>My approach to scientific discovery utilizes my knowledge of physical processes, mathematical techniques, and observations to develop, improve, and utilize climate and weather models. My
-specific focus has been on land and land-atmosphere interactions at scales from a point to the globe.
-My research stands at the nexus of atmospheric science, climate science, hydrology, and ecology,
-with implications for water management, agriculture, and climate and weather prediction. I am
-a strong proponent of collaborative studies that involve experts from various research specialties.
-Weather and climate models are the key tool utilized to answer questions regarding the future, be
-it tomorrow or in decades. Despite the necessity of models as a tool in climate, weather, and water
-research, most researchers only use these tools. I develop models including new and innovative
-numerical techniques and parameterizations that capture the physical processes that govern the
-interaction between the land and the atmosphere. My strategy for using and developing models is
-to take full advantage of observations and model-data fusions in traditional and novel ways to gain
-insight into these physical processes. My goal is to develop the tool that enable modeling to guide
-solutions to important problems in hydrology, agriculture, and environmental management.<p>
+         </div>
+         </div>
 
-        <h2><b>Current Research<b></h2>
-        <p>I am currently trying to answer a very simple question 'Can offline physically based simulations of irrigated croplands properly project irrigation demand?'  While the impact of irrigation on local climate has been established, simulations of crop yield and irrigation under climate change use offline models that ignore feedbacks between irrigation changes and the atmosphere.  Using coupled and offline simulations, I have found that the irrigation demand cannot be calculated without taking into account the local feedbacks on the planetary boundary layer.  The international push for including water management in models has neglected this important process.  The future use of land models to calculate irrigation amounts under future climates will be fundamentally impacted by this discovery.<p>
+      <div id="tthree" class="mytab" style="display:none">
+         <div class="w3-theme-l4">
+         <h2>Experience</h2>
+          <div class="w3-container w3-theme-l5" style="font-size:x-large">
+         <b>Past Positions</b>
+           <ul>
+          <li>Course coordinator and lead lecturer for Introduction to Atmospheric Sciences in 2016/2017</li>
+          <li>Co-lecturer for Introduction to Climate Sciences from 2013-2016</li>
+          <li>Co-lecturer for Introduction to Atmospheric Sciences from 2013-2015</li>
+          <li>Teaching Assistant for graduate level dynamic meteorology (including occsioanl lecturing) from 2007-2010</li>
+          <li>Teaching Assistant for un dergraduate general atmospheric science course from 2005-2006</li>
+          </ul>
 
-<p>I am also spending considerable time implementing the land modeling advances I have achieved in the Australian Community Climate model (ACCESS).  The current generation of the model performs inadequately when coupled to a land surface scheme that properly simulates the hydrological cycle due to existing model biases.  While my colleagues upgrade the atmospheric component of the model I am updating the groundwater, runoff, and soil evaporation advances to work with this new version.  I am also collaborating with colleagues at the University of Arizona to further develop the soil evaporation model for the use in the National Center for Atmospheric Research Climate Model.  Once completed this work will result in a very rich vein of potential research, allowing me to explore how soil moisture, runoff, and evaporation processes limit and enhance the predictive ability in climate models.<p>
+         <b>Past Responsibilities</b>
+            <ul>
+                <li>Course planning</li>
+                <li>Creation of course material; lectures, assignments, exams, projects</li>
+                <li>Delivering question-answer type lectures for multiple courses</li>
+             </ul>
 
-<p>The runoff, groundwater, and soil evaporation parameterizations for CABLE that I developed exist as separate options to a different version of CABLE called Soil-Litter-Isotope.  I am currently working with scientists at the Commonwealth Scientific and Industrial Research Organization to merge Soil-Litter-Isotope with the parameterizations I developed for the next default version of CABLE.  The scientific advancement achieved by combining these two approaches is significant.  The new model version will enable myself and others to utilize isotopic observations to constrain the simulation of water and energy in the land surface-aquifer system.<p>
+           </div>
+           </div>
+                 </div>
 
-<p>The final research I am currently involved in is participating the third Global Soil Wetness Project.  This international project specifies a series of offline simulations that facilitates comparison between different models.  I am also in discussions with various scientists to participate in Soil Parameter Model Inter-comparison Project and the Evaluation of pedotransfer functions and related functional descriptions for calculation of hydraulic and thermal soil properties in global climate and hydrological models project.<p>
+     </div> <!--borber-->
+  </div>  <!--2/3 container-->
 
-        <h2><b>Past Research<b></h2>
-        <p>My career has focused on the incorporation of fundamentally improved numerical solutions, improved parameterizations of processes already in climate models, the incorporation of new, significant processes into models, and the evaluation and novel use of observations to guide and explore important processes.<p>
-        <p>My research path began as a Masters student at the University of Arizona devising an empirically derived relationship between soil water, ice, temperature, and soil properties.  The research was sparked by the knowledge that water in soil does not freeze at 0 degrees Celsius due to the physics of surface tension and impurities; yet models did not consider these processes.  I devised a new technique of analyzing soil moisture observations allowing the amount of ice to be determined despite not being directly measured.  This work continued during my PhD as I scrutinized the land surface component of the climate model used at the National Center for Atmospheric Research.  Through fundamental analysis of the numerical solutions in the model I demonstrated that the solution used at the time was not able to sustain the hydrostatic solution of the partial differential equation it attempted to solve.  The fix involved deriving a new numerical solution that satisfied the desired numerical properties of the original partial differential equation.  The new numerical solution provided a new way of including a groundwater module, that I developed as well.  The work was recognized by the researchers at the National Center for Atmospheric Research and is now a part of the Community Earth System Model.  This research is actively contributing to the work submitted to the Intergovernmental Panel on Climate Change, as well as used by researchers across the world.<p>
-       <p>After finishing my PhD I began my first post doctoral position at the Climate Change Research Centre at the University of New South Wales.  I brought my expertise of soil moisture dynamics, groundwater, and land surface processes to demonstrate that groundwater is an essential process that dampens the interannual variability in transpiration fluxes over forests in South-Eastern Australia.  Validating the performance of water fluxes in land surface weather and climate models is challenging at large scales because no observations of transpiration exist outside point measurements.  To overcome this deficiency in observations, I developed a technique of using vegetation greenness observations to validate the spatial behavior of transpiration anomalies in semi-arid regions.  This novel technique was used to demonstrate how groundwater impacts inter-annual transpiration anomalies in Eucalypt forests in Australia.  Upon starting my work with the community atmosphere biosphere land exchange (CABLE) land surface model, the model was developed primarily for single site simulations but used in a global climate model as part of CMIP4 and CMIP5.  The point scale heritage of CABLE was evident as it neglected large scale hydrological processes.  I developed a new parameterization for subgrid scale soil moisture, runoff generation, and groundwater.  The parameterizations utilize an assumed subgrid distribution of soil moisture, that dynamically varies the heterogeneity with soil moisture content, a feature missing in other parameterizations.  The development of state of the art hydrological parameterizations within CABLE brought the scientific state of the land model competitive with others internationally.<p>
-       <p>Working with colleagues at the University of New South Wales, I helped demonstrated that land surface models cannot adequately simulate drought periods.  The realization that many models cannot simulate water fluxes properly lead me to hypothesize that all of the models may lack an important physical process.  Collaborating with a soil physics and evaporation expert from ETH-Zurich, we developed a new parameterization for soil evaporation based on pore scale models of the relevant physics.  All land surface models used at weather and climate centers use empirical methods for limiting soil evaporation and neglect the relevant physical processes.  The parameterization I developed, in conjunction with Dani Or from ETH Zürich, explicitly include the physics that control evaporation from soil.  This is a significant advance for land surface modeling that eliminates the ad hoc parameterization and fundamentally changes how fluxes from soils to the atmosphere are understood.<p>
 
-        </div>
-      </div>
-      <div class="box-bottom">
-        <hr class="noscreen" />
-        <div class="footer-info-left"><a href="#">Mark Decker</a>, 2016. All rights reserved.</div>
-        <div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
-      </div>
-    </div>
-    <div class="cleaner">&nbsp;</div>
+<div class="w3-third w3-container">
+<h3>Why a custom webpage?</h3>
+<button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Share my work</button>
+<div id="Demo1" class="w3-hide">
+  <div class="w3-container">
+    <p>I wanted to create a long lived vehicle to share my published, in progress, and future research, my teaching philosophy and experience, and tidbits about myself.  Google scholar and ORCID contain my publication record, however ideas on future research and teaching are nelgected.  Ultimately I needed a single place where students, potential employers, and possible collaborators are provided with a record of my past, present, and future (well possible future) work.</p>
   </div>
 </div>
-<!-- liteAccordion is Homepage Only --> 
-<script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script> 
-<script type="text/javascript">
-$("#featured_slide").liteAccordion({
-    theme: "os-tpl",
-    containerWidth: 760, // fixed (px)
-    containerHeight: 360, // fixed (px) - overall height of the slider
-    headerWidth: 48, // fixed (px) - slide spine title
-    firstSlide: 1, // displays slide (n) on page load
-	activateOn: "click", // click or mouseover
-    autoPlay: false, // automatically cycle through slides
-    pauseOnHover: true, // pause slides on hover
-    rounded: false, // square or rounded corners
-    enumerateSlides: true, // put numbers on slides
-    slideSpeed: 800, // slide animation speed
-    cycleSpeed: 6000, // time between slide cycles
-});
+
+
+<button onclick="myAccFunc('Demo2','Demo1','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Spread interest</button>
+<div id="Demo2" class="w3-hide">
+  <div class="w3-container">
+    <p>Math, physics, and science have transformed society.  Everything that now surrounds us (from cars to plastic spoons) was made possible because of the knowledge discovered and dissiminated by scientists. Science benefits society when society understands the scientific process and believes the results.  Unfortunately it seems much of society (atleast in the US) do not believe of trust scientists.  I want to build a platform to spread my passion for math and science, particularly for weather and climate.  I feel a scientificly literate population would be gauranteed if everyone witnessed the beauty I see in predicting the future using physcs and math.  The design and creation of material that spreads my scientific passion is under development, so come back soon!</p>
+  </div>
+</div>
+
+<button onclick="myAccFunc('Demo3','Demo1','Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Learn new skill</button>
+<div id="Demo3" class="w3-hide">
+  <div class="w3-container">
+    <p>I have an innate desire to know the mechanisms and processes in the world around me.  I took apart remote controls and watches as a toddler and discovering and explaining hydrometeorological processes is my career (and passion).  However my curiousity is unlimited, and I had to learn how webpages are built in html and css.  Originally my page used liteaccordion, but has now moved to w3.css.  To this end I'd like to learn javascript for future developments.</p>
+  </div>
+</div>
+</div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <p class="w3-center w3-text-yellow">Mark Decker, 2018, All rights reserved. Made Possible (simple!) using <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
+    </div>
+
+  </footer>
+
+</div>
+
+
+<!-- END MAIN -->
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+
+
+// Accordions
+function twoswitch(id,idd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }
+}
+
+// Accordions
+function mainswitch(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Accordions
+function myAccFunc(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Tabs
+function mytab(evt, mytab) {
+  var i;
+  var x = document.getElementsByClassName("mytab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(mytab).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+
 </script>
+
 </body>
 </html>
+
