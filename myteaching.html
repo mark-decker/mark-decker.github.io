@@ -30,24 +30,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </style>
 <body>
 
-<!-- Navbar -->
-   <div class="w3-twothird" style="margin-left:250px">
-
-    <div class="w3-container">
-
-    <div class="w3-bar w3-theme w3-left-align">
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right"  onclick="mytab(event,'tone')"><h3>Why I Teach</h3></button>
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h3>My philosophy</h3></button>
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h3>Teaching experience</h3></button>
-     </div>  
-     </div>
-     </div>
-
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left w3-card" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hide-large"
+  onclick="w3_close()">Close &times;</button>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
@@ -62,6 +48,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
+    <div class="w3-container">
+    <div class="w3-bar w3-theme w3-left-align">
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right w3-xxlarge"  onclick="w3_open()">&#9776;</button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right"  onclick="mytab(event,'tone')"><h3>Why I Teach</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h3>My philosophy</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h3>Teaching experience</h3></button>
+     </div>  
+     </div>
    <div class="w3-twothird w3-container">
    <div class="w3-border">
          <div id="tone" class="mytab">
@@ -121,7 +115,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 
 <div class="w3-third w3-container">
+<div class="w3-theme-l5">
+<h2><b>Citations of my research: 1975</b> </h2>
+<h5>Source: GoogleScholar on Jan 18 2018 </h5>
+</div>
+<div class="w3-theme-l4">
 <h3>Why a custom webpage?</h3>
+</div>
 <button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Share my work</button>
 <div id="Demo1" class="w3-hide">
   <div class="w3-container">
@@ -162,26 +162,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
+  document.getElementById("mySidebar").style.display = "block";
 }
-
-// Close the sidebar with the close button
 function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
+  document.getElementById("mySidebar").style.display = "none";
 }
-
 
 // Accordions
 function twoswitch(id,idd) {
@@ -252,7 +239,12 @@ function mytab(evt, mytab) {
   evt.currentTarget.className += " w3-dark-grey";
 }
 
-
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
 </script>
 
 </body>

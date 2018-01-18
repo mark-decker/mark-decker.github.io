@@ -29,32 +29,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 }
 </style>
 <body>
-
-<!-- Navbar -->
-   <div class="w3-twothird" style="margin-left:250px">
-
-    <div class="w3-container">
-
-    <div class="w3-bar w3-theme w3-left-align">
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium w3-align-right" onclick="mytab(event,'tone')"><h4>Published</h4></button>
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h4>In Review</h4></button>
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h4>In Progress</h4></button>
-     </div>  
-     </div>
-     </div>
-
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left w3-card" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hide-large"
+  onclick="w3_close()">Close &times;</button>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="myteaching.html">Teaching</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="MarkDecker_current.pdf">Cirriculum Vitae</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="contact.html">Contact Me</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="contact.html">Get In Touch</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -62,11 +47,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
+    <div class="w3-container">
+    <div class="w3-bar w3-theme w3-left-align">
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right w3-xxlarge"  onclick="w3_open()">&#9776;</button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium w3-align-right" onclick="mytab(event,'tone')"><h4>Published</h4></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h4>In Review</h4></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h4>In Progress</h4></button>
+     </div>  
+     </div>
+
    <div class="w3-container">
    <div class="w3-border">
          <div id="tone" class="mytab">
          <div class="w3-theme-l4">
           <h2>Published: <a href="https://www.researchgate.net/profile/Mark_Decker3">Downloadable Here</a></h2>
+
+<h2><b>Citations of my research: 1975</b> </h2>
+<h5>Source: GoogleScholar on Jan 18 2018 </h5>
+
             <div class="w3-container w3-theme-l5">
       <ul>
       <li><b>[17]  <b><font color="red">Decker, M.</font>, S. Ma, and A.J. Pitman (2017) Local land--atmosphere feedbacks limit irrigation demand, <i>Environmental Research Letters</i>, https://doi.org/10.1088/1748-9326/aa65a6.</li>
@@ -147,9 +145,8 @@ combining WGHM, CABLE, PCR-GLOBWB, W3 with GRACE intersatellite tracking data, <
 
 
 
-<!--
-<div class="w3-third w3-container">
 
+<!--
    <button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Groundwater and Transpiration</button>
    <div id="Demo1" class="w3-hide">
       <div class="w3-contair">
