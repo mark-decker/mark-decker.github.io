@@ -1,99 +1,192 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<title>Mark Decker</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
-<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
-<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
-<!-- liteAccordion is Homepage Only -->
-<link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
-</head>
-<body>
-<div id="wrapper">
-  <div class="title">
-    <div class="title-top">
-      <div class="title-left">
-        <div class="title-right">
-          <div class="title-bottom">
-            <div class="title-top-left">
-              <div class="title-bottom-left">
-                <div class="title-top-right">
-                  <div class="title-bottom-right">
-                    <h1><a href="#">Mark Decker</a></h1>
-                    <p>A website detailing my research and teaching</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="noscreen" />
-  <div class="content">
-    <div class="column-left-menu">
-      <h3>MENU</h3>
-      <a href="#skip-menu" class="hidden">Skip menu</a>
-      <ul class="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="myresearch.html">Research</a></li>
-        <li class="last"><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div id="skip-menu"></div>
-     <div class="column-right"> 
-     <div class="box">
-        <div class="box-top"></div>
-        <div class="box-in">
-]
-          <h2><b>Contact information<b></h2>
-          <ul class="main-list">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112534708-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-           <p>Climate Change Research Center<p>
-           <p>Level 4 Mathews Building<p>
-           <p>University of New South Wales<p>
-           <p>Sydney, Ausralia 2052<p>
-           <p><p>
-           <p>m.decker@unsw.edu.au<p>
-           <p><a href=https://goo.gl/4Ldu3s>Google Scholar</a><p>
-           <p><a href=http://orcid.org/0000-0003-1071-611X>ORCID id: 0000-0003-1071-611X</a><p>
-
-
-
-          </ul>
-        </div>
-      </div>
-      <div class="box-bottom">
-        <hr class="noscreen" />
-        <div class="footer-info-left"><a href="#">Mark Decker</a>, 2016. All rights reserved.</div>
-        <div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
-      </div>
-    </div>
-    <div class="cleaner">&nbsp;</div>
-  </div>
-</div>
-<!-- liteAccordion is Homepage Only --> 
-<script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script> 
-<script type="text/javascript">
-$("#featured_slide").liteAccordion({
-    theme: "os-tpl",
-    containerWidth: 760, // fixed (px)
-    containerHeight: 360, // fixed (px) - overall height of the slider
-    headerWidth: 48, // fixed (px) - slide spine title
-    firstSlide: 1, // displays slide (n) on page load
-	activateOn: "click", // click or mouseover
-    autoPlay: false, // automatically cycle through slides
-    pauseOnHover: true, // pause slides on hover
-    rounded: false, // square or rounded corners
-    enumerateSlides: true, // put numbers on slides
-    slideSpeed: 800, // slide animation speed
-    cycleSpeed: 6000, // time between slide cycles
-});
+  gtag('config', 'UA-112534708-1');
 </script>
+<title>Mark Decker</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left w3-card" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hide-large"
+  onclick="w3_close()">Close &times;</button>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="motivation.html">Why it matters</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myteaching.html">Teaching</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="MarkDecker_current.pdf">Curriculum Vitae</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="contact.html">Get In Touch</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+    <div class="w3-container">
+    <div class="w3-bar w3-theme w3-left-align">
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right w3-xxlarge"  onclick="w3_open()">&#9776;</button>
+             <a class="w3-bar-item w3-button w3-hover-black" href="https://goo.gl/4Ldu3s"><h4>Google Scholar</h4></a>
+             <a class="w3-bar-item w3-button w3-hover-black" href="http://orcid.org/0000-0003-1071-611X"><h4>ORCHID</h4></a>
+             <a class="w3-bar-item w3-button w3-hover-black" href="https://www.researchgate.net/profile/Mark_Decker3"><h4>Research Gate</h4></a>
+
+     </div>  
+     </div>
+
+
+  <div class="w3-twothird">
+
+    <div class="w3-container w3-center">
+          <div class="w3-theme-l4">
+          <h2><b>Contact information<b></h2>
+          <div class="w3-container w3-theme-l5"  style="font-size:large">
+           <p>Climate Change Research Centrer</p>
+           <p>Level 4 Mathews Building</p>
+           <p>University of New South Wales</p>
+           <p>Sydney, Australia 2052</p>
+           <p></p>
+           <p>m.decker@unsw.edu.au</p>
+           </div>
+            </div>
+</div>
+
+</div>
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <p class="w3-center w3-text-yellow">Mark Decker, 2018, All rights reserved. Made Possible (simple!) using <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
+    </div>
+
+  </footer>
+
+</div>
+
+
+<!-- END MAIN -->
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+
+
+// Accordions
+function twoswitch(id,idd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }
+}
+
+// Accordions
+function mainswitch(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Accordions
+function myAccFunc(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Tabs
+function mytab(evt, mytab) {
+  var i;
+  var x = document.getElementsByClassName("mytab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtnt");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(mytab).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+
+</script>
+
 </body>
 </html>
+

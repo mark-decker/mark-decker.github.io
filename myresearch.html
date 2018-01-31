@@ -15,7 +15,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -27,6 +27,78 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+.zoomz {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 40%;
+    height: 40%;
+    margin: 0%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoomz:hover {
+    transform: scale(2.3)  translate(0%, -15%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+.zoomzzz {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 60%;
+    height: 60%;
+    margin: 0%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoomzzz:hover {
+    transform: scale(1.7)  translate(0%, 20%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+.zoomzz {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 60%;
+    height: 60%;
+    margin: 0%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoomzz:hover {
+    transform: scale(1.8)  translate(0%, 20%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+.zoom {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 60%;
+    height: 60%;
+    margin: 20%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoom:hover {
+    transform: scale(2.75)  translate(-20%, 25%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
 </style>
 <body>
 <!-- Sidebar -->
@@ -35,6 +107,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   onclick="w3_close()">Close &times;</button>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="motivation.html">Why it matters</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="myteaching.html">Teaching</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
@@ -49,7 +122,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <div class="w3-container">
     <div class="w3-bar w3-theme w3-left-align">
              <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right w3-xxlarge"  onclick="w3_open()">&#9776;</button>
-             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium w3-align-right" onclick="mytab(event,'tone')"><h4>My Interests and Specialities</h3></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium w3-align-right" onclick="mytab(event,'tone')"><h4>My Interests and Specialties</h3></button>
              <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h4>Ongoing Research</h4></button>
              <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h4>Highlights from Past Research</h4></button>
      </div>  
@@ -58,13 +131,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
    <div class="w3-border">
          <div id="tone" class="mytab">
          <div class="w3-theme-l4">
-          <h2>Research interests and specialities</h2>
+          <h2>Research interests and specialties</h2>
             <div class="w3-container w3-theme-l5"  style="font-size:x-large">
           <ul><h3>
           <li>Hydrometeorology</li>
           <li>Developing weather and climate models</li>
           <li>Terrestrial processes</li>
-              <ul><li>Hydrology, focussing on large scale</li>
+              <ul><li>Hydrology, focusing on large scale</li>
                   <li>Turbulent fluxes between the land and atmosphere</li>
                   <li>Influence of land processes on weather and climate</li>
                </ul> 
@@ -78,13 +151,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
       <div id="ttwo" class="mytab" style="display:none">
          <div class="w3-theme-l4">
-         <h2>Ongiong Research</h2>
+         <h2>Ongoing Research</h2>
           <div class="w3-container w3-theme-l5" style="font-size:x-large">
                     <ul><h3>
-                        <li>Contributing to the development of the next vesion of ACCESS for CMIP6</li>
+                        <li>Contributing to the development of the next version of ACCESS for CMIP6</li>
                         <li>Reinventing subgrid tiling of the land and land-atmosphere coupling for weather and climate models</li>
                         <li>Implementing the CABLE model improvements in Noah and CLM</li>
-                        <li>Quantifying the interplay between uncertainties in numerical solutions, parameters, and nelgected processes in soil moisture transport</li>
+                        <li>Quantifying the interplay between uncertainties in numerical solutions, parameters, and elected processes in soil moisture transport</li>
                         <li>Representing CABLE in the GSWP3 and SOIL-MIP modeling studies</li>
                         <li>Exploring benefits, limitations, and possible opportunities for optimizing LSM parameters</li>
                     </h3>
@@ -118,7 +191,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             <b>WRF and LIS (Weather prediction model and land system)</b>
               <ul>
               <li>Contributed to the development of new snow parameterizations for the Noah model</li>
-              <li>Implemented a simple irrigation model (prior to the relase of official modules</li>
+              <li>Implemented a simple irrigation model (prior to the release of official modules</li>
               <li>Incorporated hydrological and flux parameterizations in CABLE-WRF using LIS</li>
               <li>Developed ability to run land only simulations using land-atmosphere simulations</li>
             </ul>
@@ -126,7 +199,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
                  <ul>
                <li>Created conceptual model of subgrid scale soil moisture and runoff processes</li>
                     <li>Based on an assume subgrid PDF of soil moisture using a single parameter and subgrid topographic data</li>
-                       <li>New parameterizations includes changes in both mean and variability (TOPMODEL apprach in LSMs does not</li>
+                       <li>New parameterizations includes changes in both mean and variability (TOPMODEL approach in LSMs does not</li>
                        <li>Runoff and land-atmosphere fluxes formulated using subgrid properties</li>
                <li>Added soil pore scale based physical processes to soil evaporation parameterizations</li>
                     <li>Unique among CMIP models due to physical basis, eliminating commonly used empirical methods</li>
@@ -145,11 +218,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
            <div style="font-size:x-large">
                  <ul><li>Demonstrated land-atmosphere feedbacks are of first order importance in forecasting irrigation demand</li>
                      <li>Quantified the inability of surface layer moisture satellite data to capture land-atmosphere coupling processes</li>
-                     <li>Demonstrated that remote sensing based transpiration to provide drought-vegetation information beyoind satellite greenness data</li>
+                     <li>Demonstrated that remote sensing based transpiration to provide drought-vegetation information beyond satellite greenness data</li>
                      <li>Showed that groundwater is essential for the differential drought response between Australian forests and grasslands</li>
                      <li>Provided first constraint on large scale transpiration anomalies with model-data fusions</li>
-                     <li>Diagnosed why CABLE was unable to adequately simulate drought, and showed most LSMs do not reasonalby simulate dry periods</li>
-                     <li>Estimated changes in soil and goundwater seperately  using my modeling work and GRACE data in a data assimilation system</li>
+                     <li>Diagnosed why CABLE was unable to adequately simulate drought, and showed most LSMs do not reasonably simulate dry periods</li>
+                     <li>Estimated changes in soil and groundwater separately  using my modeling work and GRACE data in a data assimilation system</li>
                   </ul>
               </div>
              </div>
@@ -162,15 +235,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
                  <b>Quantified errors in near surface states and climate in several reanalysis products</b>
                       <ul><li>Evaluated bias, correlation, and magnitude of variability in causing errors</li>
                           <li>Showed reanalysis products are most performant at monthly scales, with bias induced errors</li>
-                          <li>Timescale below monthly have large errors due to correlation and incorrect varaibility</li>
+                          <li>Timescale below monthly have large errors due to correlation and incorrect variability</li>
                       </ul>
-                      <b>Created large scale estimates of how transpiration responds to precipitation anaomalies</b>
-                       <ul><li>Compared satellite/model derived transpiration anomalies to multiple model disaggregated ET products and greeness indicies</li>
-                           <li>Simple greeness metrics from visible or microwave datasets similar to complex obervations/model techniques</li>
+                      <b>Created large scale estimates of how transpiration responds to precipitation anomalies</b>
+                       <ul><li>Compared satellite/model derived transpiration anomalies to multiple model dis-aggregated ET products and greenness indices</li>
+                           <li>Simple greenness metrics from visible or microwave datasets similar to complex observations/model techniques</li>
                         </ul>
                      
                        <b>Extended common in situ observations of soil liquid and temperature to estimate soil ice content</b>
-                       <b>Generated seperate estimate of soil and groundwater changes from GRACE data</bs>
+                       <b>Generated separate estimate of soil and groundwater changes from GRACE data</bs>
                   </ul>
              </div>
              </div>
@@ -181,38 +254,60 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
      </div> <!--borber-->
   </div>  <!--2/3 container-->
-
-
-<div class="w3-third w3-container">
+<div class="w3-third w3-container"><div class="w3-center">
 <div class="w3-theme-l5">
 <h3><b>Total Citation Count: 2025 </b></h3>
-<h5>Source: GoogleScholar on Jan 18 2018 </h5>
+<h5>Source: Google Scholar on Jan 18 2018 </h5>
 </div>
+
 <div class="w3-theme-l4">
-<h3>Why a custom webpage?</h3>
-</div>
-<button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Share my work</button>
-<div id="Demo1" class="w3-hide">
-  <div class="w3-container">
-    <p>I wanted to create a long lived vehicle to share my published, in progress, and future research, my teaching philosophy and experience, and tidbits about myself.  Google scholar and ORCID contain my publication record, however ideas on future research and teaching are nelgected.  Ultimately I needed a single place where students, potential employers, and possible collaborators are provided with a record of my past, present, and future (well possible future) work.</p>
+<div style="padding-top:100px padding-left:50px">
+<div class="w3-center">
+
+<div class="slideshow-container">
+  <div class="w3-center w3-displaytopmmiddle" style="width:100%">
+    <button class="w3-left w3-theme-l5" onclick="plusDivs(-1)">&#10094; <b>Prev</b></button>
+    <button class="w3-right w3-theme-l5" onclick="plusDivs(1)"><b>Next</b> &#10095;</button>
+    <div class="w3-center" style="background-color:rgb(245,245,245); margin-left:20%; margin-right:20%"><h4><b>Selected research</b></h4></div></div>
   </div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+	<div class="zoomzz" onmouseover="blurtext('ablr')" onmouseout="unblurtext('ablr')" > 
+<a href="http://iopscience.iop.org/article/10.1088/1748-9326/aa65a6">
+	<img src="irrigation_rate_offline_coupled_3.png" alt="Just Me" style="width:100%"></a>
+<div class="w3-center" style="font-size:12px">Irrigation projections commonly use land only models (red points), neglecting land-atmosphere coupling, we showed that land-atmosphere feedbacks (blue) significantly change irrigation estimates.  Land-atmo coupling moistens the near surface air (left panel), causing lower mean irrigation rates with increased variability (right panel).</div>
+</div></div>
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+	  <!-- <div class="w3-card-4" style="width:100%">-->
+	<div class="zoomzzz" onmouseover="blurtext('ablr')" onmouseout="unblurtext('ablr')" > 
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/2016MS000832/full">
+<img src="CTRL_GW_PSM_4towers_mylabels.png" alt="Just Me" style="width:100%">
+</a>
+<div class="w3-center" style="font-size:12px">Soil evaporation in weather/climate models is represented without regard to the dominant physics.  A pore scale model, based on physics, greatly enhances model performance, removes the common ad hoc methods, and actually reduces uncertainty.</div>
+</div></div>
+
+  <div class="mySlides">
+	  <!-- <div class="w3-card-4" style="width:100%">-->
+	<div class="zoomzzz" onmouseover="blurtext('ablr')" onmouseout="unblurtext('ablr')" > 
+<a href="http://iopscience.iop.org/article/10.1088/1748-9326/aa65a6">
+	<img src="subgrid_slopes_gw_satfrac_dry_2.png" alt="Just Me" style="width:100%"></a>
+<div class="w3-center" style="font-size:12px">Soil moisture varies and runoff is generated at small spatial scales; below what can be included in weather/climate models.  A new conceptual representation derived from the subgrid pdf was derived.  They sound formulation results in subgrid dynamics in agreement with the limited data.  Shown is a representation of the runoff, soil moisture, and groundwater processes.</div>
+
+</div></div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div></div>
 </div>
 
 
-<button onclick="myAccFunc('Demo2','Demo1','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Spread interest</button>
-<div id="Demo2" class="w3-hide">
-  <div class="w3-container">
-    <p>Math, physics, and science have transformed society.  Everything that now surrounds us (from cars to plastic spoons) was made possible because of the knowledge discovered and dissiminated by scientists. Science benefits society when society understands the scientific process and believes the results.  Unfortunately it seems much of society (atleast in the US) do not believe of trust scientists.  I want to build a platform to spread my passion for math and science, particularly for weather and climate.  I feel a scientificly literate population would be gauranteed if everyone witnessed the beauty I see in predicting the future using physcs and math.  The design and creation of material that spreads my scientific passion is under development, so come back soon!</p>
-  </div>
-</div>
-
-<button onclick="myAccFunc('Demo3','Demo1','Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Learn new skill</button>
-<div id="Demo3" class="w3-hide">
-  <div class="w3-container">
-    <p>I have an innate desire to know the mechanisms and processes in the world around me.  I took apart remote controls and watches as a toddler and discovering and explaining hydrometeorological processes is my career (and passion).  However my curiousity is unlimited, and I had to learn how webpages are built in html and css.  Originally my page used liteaccordion, but has now moved to w3.css.  To this end I'd like to learn javascript for future developments.</p>
-  </div>
-</div>
-</div>
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
       <p class="w3-center w3-text-yellow">Mark Decker, 2018, All rights reserved. Made Possible (simple!) using <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
@@ -318,6 +413,48 @@ function mytab(evt, mytab) {
   }
   document.getElementById(mytab).style.display = "block";
   evt.currentTarget.className += " w3-dark-grey";
+}
+
+
+function blurtext(myidd) {
+  document.getElementById("myidd").style.opacity = "0.2";
+  document.getElementById("myidd").style.zindex = "-1";
+}
+function unblurtext(myidd) {
+  document.getElementById("myidd").style.zindex = "-1";
+  document.getElementById("myidd").style.opacity = "1.0";
+}
+var slideIndex = 0;
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 20000); // Change image every 20 seconds
+    }
+
+
+var ManualslideIndex = 1;
+showDivs(ManualslideIndex);
+
+function plusDivs(n) {
+    showDivs(ManualslideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {ManualslideIndex = 1}
+    if (n < 1) {ManualslideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[ManualslideIndex-1].style.display = "block";
 }
 
 

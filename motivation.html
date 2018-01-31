@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112534708-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-112534708-1');
+</script>
+<title>Mark Decker</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+.zoomz {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 40%;
+    height: 40%;
+    margin: 0%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoomz:hover {
+    transform: scale(2.3)  translate(0%, -15%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+.zoomzz {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 60%;
+    height: 60%;
+    margin: 0%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoomzz:hover {
+    transform: scale(2.2)  translate(-10%, 30%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+.zoom {
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 60%;
+    height: 60%;
+    margin: 20%  auto 0% auto;
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+
+.zoom:hover {
+    transform: scale(2.75)  translate(-20%, 25%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    overflow:visible;
+    z-index: 10;
+    opacity: 1.0;
+}
+.imgcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+html,body,h1,h2,h3,h4,h5,h6,h7,h8 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Sidebar --> 
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left w3-card" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hide-large"
+  onclick="w3_close()">Close &times;</button>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="motivation.html">Why it matters</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myresearch.html">Research</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="myteaching.html">Teaching</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="MarkDecker_current.pdf">Curriculum Vitae</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="contact.html">Get In Touch</a>
+</nav>
+
+ 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+    <div class="w3-container">
+    <div class="w3-bar w3-theme w3-left-align">
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtn hide-small hide-medium w3-align-right w3-xxlarge"  onclick="w3_open()">&#9776;</button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium w3-align-right" onclick="mytab(event,'tone')"><h4>Extremes cost</h4></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'ttwo')"><h4>Drought,Agriculture,Climate</h4></button>
+             <button class="w3-bar-item w3-button w3-theme-d5 w3-hover-white testbtnt hide-small hide-medium  w3-align-right" onclick="mytab(event,'tthree')"><h4>Possible futures not predictions</h4></button>
+
+     </div>  
+     </div>
+
+     <div class="w3-twothird w3-container">
+   <div class="w3-border">
+       <div id="tone" class="mytab">
+            <div class="w3-theme-l5 w3-center">
+                <h1>Extreme events are costly</h1>
+                <div class="w3-col" style="width:40%">
+			<div class="w3-center"><h2><b><p>In 2017 alone, 16 US weather/climate events cost over one billion dollars!</p><p>2017 weather/climate extremes totaled over <a href="https://www.forbes.com/sites/marshallshepherd/2018/01/09/cost-of-weather-climate-disasters-was-306-billion-in-2017-what-could-you-buy-with-that/#2c2f910171ed">$306 billion!</a></p><p>Prediction, preparation, and mitigation save money and lives.</p></h2></b></div>
+		</div>
+		<div class="w3-col" style="width:60%">
+			<div class="w3-center">
+			<div class="zoom" onmouseover="blurtext('myblr')" onmouseout="unblurtext('myblr')" > 
+		        <img src="us_billion_dollar_disasters_2017.png" style="width:100%" >
+			</div></div>
+			<div class="w3-text-red" style="border: 1px solid red margin: 0 auto">
+				<h5>The 16 billion $ events in 2017</h5></div>
+		</div>
+		<div class="w3-container"><div class="w3-center">
+			<h3><p id="myblr" style="opacity:1.0">Although many people do not think about weather and climate daily like I do, everyone needs to understand that hurricanes, thunder storms, droughts, and floods are a significant cost to society.  Prediction, whether a single event next week or the risk of an event during the next ten years, is essential in mitigating societal harm.  A core tenant of my research is <a href="http://iopscience.iop.org/article/10.1088/1748-9326/11/10/104012/meta">validating</a>, <a href="http://onlinelibrary.wiley.com/doi/10.1002/2016MS000832/full">improving model physics</a>, <a href="https://journals.ametsoc.org/doi/abs/10.1175/2008JHM1011.1">numerical solutions</a>, and <a href="http://onlinelibrary.wiley.com/doi/10.1002/2015MS000507/abstract">developing</a> the land-atmosphere components vital in weather and possible future climate prediction. The <a href="http://www.cesm.ucar.edu/">Community Earth System Climate Model (CESM)</a>, the initial <a href="https://climatemodeling.science.energy.gov/projects/energy-exascale-earth-system-model">Energy Exascale Earth System Model</a>, the <a href="https://www.csiro.au/en/Research/OandA/Areas/Assessing-our-climate/CAWCR/ACCESS">Australian Community Climate and Earth System Simulator</a> and <a href="https://www.mmm.ucar.edu/weather-research-and-forecasting-model">the Weather Research and Forecasting Model (WRF)</a> utilize some of my development research.</p></h3>
+		</div>
+		</div></div>
+         </div>
+
+      <div id="ttwo" class="mytab" style="display:none">
+         <div class="w3-theme-l5">
+	 <div class="w3-center">
+		 <h1><b>Droughts</b></h1>
+            <div class="w3-container">
+		    <p><h3>While nearly all of the most costly 2017 weather/climate events involved excessive water, droughts can be as consequential.  The causes of drought vary by location, research continues to untangle the complex causes: climate variability and ocean temperatures, interactions between the land and the atmosphere, human alterations of land/vegetation/water cycle, climate change, and many other factors.</h3></p>
+		<p><h3>Droughts are natural events influenced by human activities.  Evidence of mega-droughts in the southwest US indicate they have and will continue to occur infrequently.  Yet the 1930s dust bowl was exacerbated by agriculture and top soil removal.  Droughts limit productivity of rain fed crops and can  depleted water stores from irrigation (water removed but not replenished)</h3></p>
+	    </div>
+		<div class=w3-container"><div class="w3-center">
+			<div class="zoomz" onmouseover="blurtext('ablr')" onmouseout="unblurtext('ablr')" > 
+
+		        <img src="us_corn_drought.png" style="width:100%" >
+			</div></div>
+			<div class="w3-text-red" style="border: 1px solid red margin: 0 auto">
+				<h5>Drought reduces corn output (Zippeet al 2016 Environ. Res. Lett.)</h5></div>
+		</div>
+		<div id="ablr">
+            <div class="w3-container">
+		    <p><h3>The US states that rely most heavily on irrigation are located in the Southwest.  Irrigated agriculture enables crop production in these arid regions, however droughts are frequent.  Increasing water use cannot continue; groundwater stores are declining.  Climate change is expected to exacerbate the issue although the science cannot produce the local scale information farmers would benefit from.</h3></p></div></div>
+		<div class=w3-container"><div class="w3-center">
+			<div class="zoomz" onmouseover="blurtext('bblr')" onmouseout="unblurtext('bblr')" > 
+
+		        <img src="us_irrig.png" style="width:100%" >
+			</div></div>
+			<div class="w3-text-red" style="border: 1px solid red margin: 0 auto">
+				<h5>Groundwater depletion between 1900 and 2008 (USGS).</h5></div>
+		</div>
+		<div id="bblr">
+            <div class="w3-container">
+		    <p><h3>So irrigation is needed during droughts to prevent crop losses as well as enable agriculture in arid regions that never receive the needed rainfall.  Globally, depletion of water stores, specifically groundwater (largest non-ice fresh water store globally).  Water must be sustainably consumed, founded on more efficient agricultural use.</h3></p>	</div></div>
+		<div class=w3-container"><div class="w3-center">
+			<div class="zoomz" onmouseover="blurtext('cblr')" onmouseout="unblurtext('cblr')" > 
+
+		        <img src="us_gw_depletion.png" style="width:100%" >
+			</div></div>
+			<div class="w3-text-red" style="border: 1px solid red margin: 0 auto">
+				<h5>Groundwater depletion between 1900 and 2008 (USGS).</h5></div>
+		</div>
+
+		
+</div></div></div>
+
+
+
+
+      <div id="tthree" class="mytab" style="display:none"> 
+	 <div class="w3-center">
+         <div class="w3-theme-l5">
+		 <h1><b>Possible futures</b></h1>
+            <div class="w3-container">
+		<div id="cblr">
+		<p><h3>Future changes in drought and water use due to changes in climate from anthropogenic greenhouse gas emissions remains uncertain.  Higher temperatures cause increased evaporation of soil water, heat stress (heatwaves) can kill crops, changes in precipitation are uncertain, increased CO2 concentrations may reduce amount of water crops use, and the frequency and magnitude of future droughts remains a mystery.</h3></p>
+		</div>
+		<div id="cblr">
+			<p><h3>Despite the many uncertainties, possible future changes in agriculture due to changes in climate have been produced.</h3><p>
+		</div>
+		<div class=w3-container"><div class="w3-center">
+			<div class="zoomz" onmouseover="blurtext('ablr')" onmouseout="unblurtext('ablr')" > 
+
+		        <img src="what_crops_may_due.png" style="width:100%" >
+			</div></div>
+			<div class="w3-text-red" style="border: 1px solid red margin: 0 auto">
+				<h5>One estimate (not a prediction) from <a href="http://www.fao.org/fileadmin/user_upload/foodclimate/presentations/water/water_pres.pdf">FAO</a></h5></div>
+		</div>
+			<p><h3>The figure above is only a possible outcome, derived from a single climate model (not robust).  It does highlight the fundamental roles weather, climate, humans,land-atmosphere coupling, and hydrology all have in shaping water resources, food production and agriculture.</h3><p>
+			<p><h3>My research is one part of a global effort to advance the science of water, weather, and climate.  Ultimately the goal is processes level understanding and predictive modeling systems; be it forecasting next weeks flood or the probability of a severe drought in the coming decade.</p></h3>
+
+	    </div>
+	    </div>
+	    </div>
+	    </div>
+     </div> <!--borber-->
+  </div>  <!--2/3 container-->
+
+
+<div class="w3-third w3-container"><div class="w3-center">
+<div class="w3-theme-l5">
+<h3><b>Total Citation Count: 2025 </b></h3>
+<h5>Source: Google Scholar on Jan 18 2018 </h5>
+</div>
+<div class="w3-theme-l4">
+<div style="padding-top:0px padding-left:0px">
+<div class="w3-container">
+<div class="w3-center">
+	<div style="border-bottom: 5px solid black; background-color:white"><h3>A related <a href="http://iopscience.iop.org/article/10.1088/1748-9326/aa65a6">irrigation study</a></h3></div>
+		<div class=w3-container"><div class="w3-center">
+			<div class="zoomzz" onmouseover="blurtext('ablr')" onmouseout="unblurtext('ablr')" > 
+<img src="irrigation_rate_offline_coupled_3.png" alt="Just Me" style="width:100%">
+<div class="w3-center" style="font-size:12px">Irrigation projections commonly use land only models (red points), neglecting land-atmosphere coupling, we showed that land-atmosphere feedbacks (blue) significantly change irrigation estimates.  Land-atmo coupling moistens the near surface air (left panel), causing lower mean irrigation rates with increased variability (right panel).</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<!--
+<div class="w3-third w3-container">
+
+   <button onclick="myAccFunc('Demo1','Demo2','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Groundwater and Transpiration</button>
+   <div id="Demo1" class="w3-hide">
+      <div class="w3-contair">
+       <figure>
+        <div id="c3">
+             <img src="gw_grass_tree_transpiration.jpg" alt="" width="100%"/>
+             <figcaption><p>Despite similar precipitation anamolies over grasslands and forests, the forests exhibit minimal tranpiration variations while transpoiration over grasslands is similar to precipitation.  Neglecting groundwater-transpiration dynamics results in the inability of the model to exhibit similar vegetation dependent drought responses.</p></figcaption>
+       </div>
+
+             </figure>
+  </div>
+</div>
+
+
+<button onclick="myAccFunc('Demo2','Demo1','Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Irrigation Demand Modeling</button>
+<div id="Demo2" class="w3-hide">
+  <div class="w3-container">
+       <figure>
+             <img src="images/demo/featured-slide/figure_2.gif" alt="" width="100%"/>
+             <figcaption>Irrigation demand is significnatly reduced by local land-atmosphere feedbacks. Future irrigation demand forecast from land only models neglects this process, likely leading to erronous predictions.</figcaption>
+             </figure>
+  </div>
+</div>
+
+<button onclick="myAccFunc('Demo3','Demo1','Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Australian forests drink groundwater</button>
+<div id="Demo3" class="w3-hide">
+  <div class="w3-container">
+       <figure>
+             <img src="images/demo/featured-slide/figure_3.gif" alt="" width="150%"/>
+             <figcaption>Australian forests exhibit little interannual variability frequent droughts by utilizing groundwater.  Model simulations show without groundwater, models cannot capture the differential response to dry periods exhibited by different vegetation types.</figcaption>
+             </figure>
+  </div>
+</div>
+</div>
+-->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <p class="w3-center w3-text-yellow">Mark Decker, 2018, All rights reserved. Made Possible (simple!) using <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> 
+    </div>
+
+  </footer>
+
+</div>
+
+
+<!-- END MAIN -->
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+
+
+// Accordions
+function twoswitch(id,idd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }
+}
+
+// Accordions
+function mainswitch(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+
+
+// Accordions
+function myAccFunc(id,idd,iddd) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(idd);
+    var z = document.getElementById(iddd);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    if (y.className.indexOf("w3-show") != -1) {
+        y.className = y.className.replace(" w3-show", "");
+    }  
+    if (z.className.indexOf("w3-show") != -1) {
+        z.className = z.className.replace(" w3-show", "");
+    } 
+}
+
+function blurtext(myidd) {
+  document.getElementById("myidd").style.opacity = "0.2";
+  document.getElementById("myidd").style.zindex = "-1";
+}
+function unblurtext(myidd) {
+  document.getElementById("myidd").style.zindex = "-1";
+  document.getElementById("myidd").style.opacity = "1.0";
+}
+
+
+// Tabs
+function mytab(evt, mytab) {
+  var i;
+  var x = document.getElementsByClassName("mytab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtnt");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(mytab).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+var leaveauto = 1;
+var slideIndex = 1;
+
+
+function callCaro() {
+    if (leaveauto > 0) {
+       carousel();
+    }
+}
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 8500); // Change image every 2 seconds
+}
+
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    leaveauto = -1
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
+
