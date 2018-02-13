@@ -27,7 +27,7 @@ month_name = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
 date_string = '{} {} {}'.format(month_name[current_date.month-1],current_date.day,current_date.year)
 
 
-pub_citation_start='<p><h2>My research has <b>1975</b> citations, including <b>1901</b> the last 5 years</h2></p>'
+pub_citation_start='<p><h2>My research has <b>'
 src_start='<div class="w3-container"><h5>Source: GoogleScholar on Jan 18 2018</h5></div>'
 
 rest_citation_start='<h3><b>Total Citation Count:'
@@ -43,7 +43,7 @@ for file_name in files_to_update:
         elif pub_citation_start in l:
             l = '<p><h2>My research has <b>{}</b> citations, including <b>{}</b> the last 5 years</h2></p>\n'.format(str(cnt),str(cnt_lo))
         elif src_start in l:
-            l = '<div class="w3-container"><h5>Source: GoogleScholar on Jan 18 2018</h5></div>\n'.format(date_string)
+            l = '<div class="w3-container"><h5>Source: GoogleScholar on {}</h5></div>\n'.format(date_string)
         data[i] = l
     
     
